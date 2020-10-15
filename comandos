@@ -1,0 +1,6 @@
+a2enmod ssl
+a2enmod headers
+a2ensite default-ssl
+a2enconf ssl-params
+systemctl reload apache2
+apache2ctl configtest
